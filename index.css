@@ -5,6 +5,12 @@
 	box-sizing: border-box;
 	font-family: "Open Sans",sans-serif;
 }
+/*Smooth Scroll*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Setup Background and Text Stylings*/
 body{
 	background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),url(./assets/images/background.jpg);
 	background-size: cover;
@@ -13,22 +19,25 @@ body{
 	background-attachment: fixed;
 	text-shadow: 1px 3px 3px black;
 }
-.modal-body, #modalsubmitlabel{
-	text-shadow:none;
-}
+
+/*Setup minimum heights per section*/
 section{
 	min-height:100vh ;
 	padding-top: 102px
 }
 
-#projects img {
-	width: 30%;
-	height: 30%;
-}
+/*Removed Styles for all anchors*/
 a,a:link ,a:visited {
 	text-decoration: none;
 	color:white;
 }
+
+/*Changed font for all <h1>*/
+h1 {
+	font-family: "Kanit",sans-serif;
+}
+
+/*Initialized Other background colors to use*/
 .bg-main {
 /*	background: linear-gradient(45deg,#202020,#666666,#777777);*/
 	background-color: #202020;
@@ -45,6 +54,19 @@ a,a:link ,a:visited {
 	border-radius: 20px;
 	box-shadow: black;
 }
+.bg-tools {
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 20px;
+	border:5px solid rgba(74,154,31,1);
+}
+.bg-footer {
+	background: linear-gradient(0deg,rgba(51,81,36,0.6),rgba(21,21,21,0.6));
+}
+
+/*Navbar Stylings*/
+nav {
+	border-bottom: 2px solid rgba(255,255,255,0.5);
+}
 nav img {
 	width: 20%;
 	box-shadow: black;
@@ -52,44 +74,21 @@ nav img {
 nav li {
 	margin-right: 1rem;
 }
-
-nav {
-	border-bottom: 2px solid rgba(255,255,255,0.5);
-}
 .navbar-brand {
 	font-family: "Libre Baskerville",sans-serif;
 	font-size: 1.75rem;
-
 }
 .navbar-brand:hover {
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
 
-
-#landing img {
-	width:50%;
-	border: 5px solid rgba(74,154,31,1);
-}
-
+/*Socials Icons*/
 .fa-brands {
 	font-size: 2rem;
 	margin-right: 1rem;
 	padding: 1rem 0 1rem 0;
 	text-shadow: 1px 3px 5px rgba(74,154,31,1) ;
 }
-#landing .fa-brands:hover {
-	font-size: 2.5rem;
-	margin-right: 1rem;
-	padding: 1rem 0 1rem 0;
-	text-shadow: none;
-}
-#contact .fa-brands:hover {
-	margin-right: 1rem;
-	padding: 1rem 0 1rem 0;
-	text-shadow: none;
-}
-
 .fa-facebook {
 	color: #316FF6;
 	margin-left: 1rem;
@@ -109,32 +108,52 @@ nav {
 .fa-github {
 	color: #fff;
 }
+#landing .fa-brands:hover {
+	font-size: 2.5rem;
+	margin-right: 1rem;
+	padding: 1rem 0 1rem 0;
+	text-shadow: none;
+}
+#contact .fa-brands:hover {
+	margin-right: 1rem;
+	padding: 1rem 0 1rem 0;
+	text-shadow: none;
+}
+
+/*Landing Stylings*/
+#landing img {
+	width:50%;
+	border: 5px solid rgba(74,154,31,1);
+}
+
+/*About Me Stylings*/
+#intro {
+	text-align: justify;
+}
+
+#about-me .emoji {
+	font-size: 3rem;
+}
+@media (min-width: 768px) {
+  #about-me-container {
+		background-color: rgba(51,81,36,0.6);
+		border-radius: 20px;
+		box-shadow: black;
+		border:5px solid rgba(74,154,31,1);
+	}
+}
+
+/*Projects Stylings*/
 #projects img {
 	width: 50vw;
+	height: 30%;
 }
 #projects .card {
 	width: 70%;
 	height: 90%;
 }
 
-.btn-card {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #d4af37;
-  --bs-btn-border-color: #f2c83f;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #a6892b;
-  --bs-btn-hover-border-color: #a6892b;
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #d4af37;
-  --bs-btn-active-border-color: #d4af37;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
-  box-shadow: 1px 3px 3px black;
-}
-
+/*Contact Stylings*/
 #contact iframe {
 	width: 100%;	 
 	height: 90%; 
@@ -158,38 +177,68 @@ input,textarea {
     width: 100px;
     outline: none;
 }
-
-.bg-tools {
-	background-color: rgba(255,255,255,0.5);
-	border-radius: 20px;
-	border:5px solid rgba(74,154,31,1);
-
+.modal-body, #modalsubmitlabel{
+	text-shadow:none;
 }
+
+/*Tools Stylings*/
 #tools img {
 	width:150px;
 }
+
+/*Footer Stylings*/
 footer span {
 	margin-right: 1rem;
 }
-.bg-footer {
-	background: linear-gradient(0deg,rgba(51,81,36,0.6),rgba(21,21,21,0.6));
-}
-#intro {
-	text-align: justify;
-}
-h1 {
-	font-family: "Kanit",sans-serif;
+
+/*Button Styles*/
+.btn-card {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d4af37;
+  --bs-btn-border-color: #f2c83f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a6892b;
+  --bs-btn-hover-border-color: #a6892b;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #d4af37;
+  --bs-btn-active-border-color: #d4af37;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+  box-shadow: 1px 3px 3px black;
 }
 
-#about-me .emoji {
-	font-size: 3rem;
-}
 
-@media (min-width: 768px) {
-  #about-me-container {
-		background-color: rgba(51,81,36,0.6);
-		border-radius: 20px;
-		box-shadow: black;
-		border:5px solid rgba(74,154,31,1);
-	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
