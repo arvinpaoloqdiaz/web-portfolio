@@ -18,17 +18,19 @@
 		<!-- fa-awesome icons -->
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+
 		<title>Arvin Paolo Diaz | Frontend Capstone</title>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 
 
+
 	</head>
-	<body class="bg-main text-light">
+	<body>
 
 		<!-- Start of Navbar -->
-			<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-green">
+			<nav class="fixed-top navbar navbar-expand-lg bg-green">
 			  <div class="container-fluid">
 			    <a class="navbar-brand" href="#landing">
 			    	APQD
@@ -53,11 +55,55 @@
 			        <li class="nav-item">
 			          <a class="nav-link" href="#contact">Contacts</a>
 			        </li>
+			        <li>
+			        	<label class="switch">
+			        	  <input type="checkbox" id="mode">
+			        	  <span class="slider round"></span>
+			        	  <i class="fa-solid fa-moon"></i>
+			        	  <i class="fa-solid fa-sun"></i>
+			        	  
+			        	</label>
+			        </li>
 			      </ul>
 			    </div>
 			  </div>
 			</nav>
 		<!-- End of Navbar -->
+
+		<!-- Start of Test Navbar -->
+			<!-- <nav>
+				<div>
+					<a href="#landing"></a>
+				</div>
+				<div>
+					<ul>
+						<li class="nav-item">
+						  <a class="nav-link" aria-current="page" href="#landing">Home</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#about-me">About Me</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#tools">Tools</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#contact">Contacts</a>
+						</li>
+						<li>
+							<label class="switch">
+							  <input type="checkbox" id="mode">
+							  <span class="slider round"></span>
+							  <i class="fa-solid fa-moon"></i>
+							  <i class="fa-solid fa-sun"></i>
+							</label>
+						</li>
+					</ul>
+				</div>
+			</nav> -->
+		<!-- End of Test Navbar -->
 
 		<!-- Start of Landing div -->
 			<section id="landing" class="container text-center">
@@ -345,6 +391,9 @@
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+		<!-- External JS -->
+		<script type="text/javascript" src="./index.js"></script>
 
 	</body>
 </html>
