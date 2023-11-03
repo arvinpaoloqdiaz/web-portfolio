@@ -36,12 +36,13 @@ These are the requirements for the Frontend Capstone Development. The Single Pag
 ### Resources Used
 This Single-Page Application is built using the following:
 
-* [![Next][Next.js]][Next-url]
-* `Git`
-* `HTML`
-* `CSS`
-* `Bootstrap`
-* `JavaScript`
+* [![Git][Git-logo]](#)
+* [![HTML5][HTML-logo]](#)
+* [![CSS3][CSS-logo]](#)
+* [![Bootstrap][Bootstrap-logo]](#)
+* [![JavaScript][JavaScript-logo]](#)
+  
+
 
 ## Getting Started
 
@@ -58,3 +59,10 @@ This Single-Page Application is built using the following:
 ## License
 
 ## Contacts
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+[Git-logo]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
+[HTML-logo]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[CSS-logo]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
+[Bootstrap-logo]: https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white
+[JavaScript-logo]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+
