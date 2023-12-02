@@ -183,22 +183,44 @@ figcaption {
 }
 
 /*Projects Stylings*/
-#projects img {
-	width: 100%;
+.card,.card-body,.card.footer{
 	height: 100%;
-	border-radius: 20px 20px 0 0;
-	border: 10px solid var(--green-secondary);
 }
-#projects .card {
-	width: 70%;
-	height: 90%;
+.card-header{
+	font-family: "Kanit",sans-serif;
+	font-size: 1.2em;
 }
-#projects div div button{
-	margin-top: 1rem;
+.card:hover{
+	transform: scale(1.05);
+	transition: ease-in-out 0.33s;
+	z-index:100;
 }
-#projects .card-text{
-	height:100px !important;
-	margin-inline: 1rem;
+.card-img{
+	width: 100%;
+	min-height: 100% !important;
+}
+.card-body{
+	margin:0;
+	padding: 0;
+	position: relative;
+}
+.card-image-overlay{
+	position: absolute;
+	height: 100%;
+	top:0;
+	background: rgba(0,0,0,0.5);
+	display: grid;
+	place-items: center;
+	text-align: justify;
+	color:white;
+	opacity: 0;
+}
+.card-image-overlay:hover{
+	transition: ease-in-out 0.33s;
+	opacity: 1;
+}
+.card-image-overlay .card-text{
+	padding: 1rem;
 }
 /*Contact Stylings*/
 #contact iframe {
