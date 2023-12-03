@@ -312,20 +312,34 @@ footer span {
 .fa-solid	{
 	font-size: 20px;
 	text-shadow: none;
-	font-weight: 1;
+	font-weight: lighter;
 }
+.fa-solid:hover{
+	animation: spin 2s;
+}
+@keyframes spin {
+	100% {transform: rotate(360deg);}
+  }
 .fa-sun {
-	position: relative;
+	position: absolute;
 	top:5px;
-	left:19px;
+	right:6.5px;
 	color:white;
 }
+.fa-sun:hover{
+	-webkit-text-stroke: 0.75px #d8860b;
+	transition: ease-in-out 0.33s;
+}
 .fa-moon {
-	position: relative;
-	left: 3px;
+	position: absolute;
+	left: 6.5px;
 	top: 5px;
 	color:white;
 
+}
+.fa-moon:hover{
+	-webkit-text-stroke: 0.75px #3a3a3a;
+	transition: ease-in-out 0.33s;
 }
 .switch {
   position: relative;
