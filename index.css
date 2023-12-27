@@ -419,6 +419,9 @@ input[type="checkbox"]:checked {
 -possibly use SwiperJS to rework projects section
 */
 
+.text-link:hover{
+	text-decoration: underline;
+}
 
 
 
